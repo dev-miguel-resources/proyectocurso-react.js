@@ -10,6 +10,7 @@ import {toggleCartHidden} from '../../redux/cart/cart.actions';
 
 import './cart-dropdown.styles.scss';
 
+// COMPONENTE LISTO
 const CartDropdown = ({cartItems, history, dispatch}) => (
     <div className='cart-dropdown'>
         <div className='cart-items'>
@@ -37,3 +38,4 @@ const mapStateToProps = createStructuredSelector({
 });
 
 export default withRouter(connect(mapStateToProps)(CartDropdown));
+
